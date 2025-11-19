@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — Dashboard Siswa</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="theme-colorful">
+  <main class="login-page">
+    <div class="card login-card">
+      <h2>Login</h2>
+      <form id="loginForm" onsubmit="return false;">
+        <label>Username
+          <input id="username" type="text" placeholder="username" />
+        </label>
+        <label>Password
+          <input id="password" type="password" placeholder="password" />
+        </label>
+        <div class="row">
+          <button id="btnLogin" class="btn primary">Masuk</button>
+          <a href="index.html" class="btn outline">Kembali</a>
+        </div>
+        <div id="loginMsg" class="muted small">Demo: username <strong>ppkn</strong> password <strong>123</strong></div>
+      </form>
+    </div>
+  </main>
+
+  <script src="assets/js/auth.js"></script>
+</body>
+</html>

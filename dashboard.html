@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard — Kehadiran & Nilai</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body class="theme-colorful">
+  <header class="header-dashboard">
+    <div class="left">
+      <img src="assets/img/logo.svg" alt="logo" class="logo-small">
+      <h1>Dashboard Siswa</h1>
+    </div>
+    <div class="right">
+      <span id="userLabel">Admin</span>
+      <button id="btnLogout" class="btn outline">Logout</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card panel">
+      <h2>Daftar Kehadiran</h2>
+      <div class="controls">
+        <label>Tanggal Pertemuan: <input type="date" id="tanggalPertemuan"></label>
+        <div class="actions">
+          <button id="btnSubmit" class="btn primary">Submit</button>
+          <button id="btnRevisi" class="btn">Revisi</button>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table id="tabelKehadiran" class="table">
+          <thead>
+            <tr><th>No</th><th>Nama</th><th>NIM</th><th>Status Kehadiran</th></tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+
+      <div id="msg" class="muted small"></div>
+    </section>
+
+    <section class="card panel">
+      <h2>Rekap Nilai (Sample)</h2>
+      <div id="nilaiArea" class="muted small">Grafik / tabel nilai akan tampil di sini.</div>
+    </section>
+  </main>
+
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
